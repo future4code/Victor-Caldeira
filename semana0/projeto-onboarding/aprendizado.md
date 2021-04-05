@@ -1,0 +1,2 @@
+# Aprendizado da semana
+A primeira semana na LBN foi muito panck com hardkore. Começar a aprender os comando para quem nunca teve esperiancia é muito **desafiador**, e ainda agora esta sendo. Ja fiz algumas amizades e o Slack é muito excelente.
