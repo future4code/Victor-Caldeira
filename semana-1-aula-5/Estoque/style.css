@@ -1,0 +1,28 @@
+img {
+    height: 150px;
+    width: 180px;
+}
+p {
+    background-color: gray; 
+    color: goldenrod;
+    
+}
+tr {
+    background: rgb(231, 221, 224);
+}
+h2 {
+    background: paleturquoise;
+    width: 615px;
+}
+
+div {
+    background: rgb(231, 221, 224);
+    width: 625px;
+}
+.box {
+    display:auto;
+    margin: 9px;
+    padding: auto;
+
+
+}

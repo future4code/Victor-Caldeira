@@ -1,0 +1,27 @@
+h1 {
+    background-color: gray; color:goldenrod;
+    
+}
+div {
+    background: rgb(231, 221, 224);
+   
+
+}
+img {
+
+    height: 40px;
+    width: 40px;
+    
+    
+
+}
+.box {
+ 
+    
+    display: inline-block;
+    margin: 15px;
+    border: 1px solid rgb(235, 209, 241);
+    padding: 35px;
+
+
+}

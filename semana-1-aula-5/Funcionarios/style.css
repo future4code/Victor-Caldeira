@@ -1,0 +1,29 @@
+p {
+    background: gray; color: goldenrod;
+}
+h2 {
+    background: paleturquoise;
+    width: 625px;
+
+}ul {
+    background: rgb(252, 214, 154);
+    
+}
+
+div {
+    background: rgb(231, 221, 224);
+    width: 612px;
+}
+.box {
+    display: auto; 
+    padding: 2px;
+    margin: 9px;
+    width: 615px;    
+
+
+}
+li {
+    width: 630px;
+
+
+}
