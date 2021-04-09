@@ -1,0 +1,33 @@
+.box {
+    width: 50px;
+    
+}
+.header {
+    text-align: center;
+}
+div{
+    text-align: center;
+    margin: auto 80px
+    
+}
+div {
+
+    background: rgba(51, 198, 235, 0.473);
+}
+.xuxu {
+
+    padding: 25px;
+    width: 0 auto;
+    color: rgb(241, 14, 14);
+
+}
+button {
+    width: 50%;
+    height: 30px ;
+    border: darkblue;
+    cursor: pointer;
+    
+}
+button :hover{
+    color: darkred;
+}

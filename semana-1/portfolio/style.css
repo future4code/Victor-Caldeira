@@ -1,0 +1,68 @@
+.box {
+    width: 50px;
+    
+}
+.header {
+    text-align: center;
+}
+
+.xxx {
+    width: 300px;
+    height: 400px;
+    
+}
+.hahaha {
+    width: 300px;
+    height: 0 auto;
+}
+
+div {
+    background: rgba(51, 198, 235, 0.473);
+    
+}
+.projeto {
+    background-color: chocolate;
+}
+.jjj {
+    background-color: chocolate;
+}
+.hahaha {
+    background: rgba(51, 198, 235, 0.473);
+}
+.inini {
+    background-color: chocolate;
+}
+.cabeca {
+    text-align: center;
+}
+.buttt {
+    text-align: center;
+    
+}
+button {
+    width: 50%;
+    height: 0 auto;
+    border: darkblue;
+    cursor: pointer;
+    
+
+}
+button:over {
+    background-color: darkred;
+
+
+}
+div{
+    text-align: center;
+    margin: auto 80px
+}
+.cordele {
+    text-emphasis-color: color rgba(2, 14, 122, 0.726);
+}
+.xuxu {
+
+    padding: 25px;
+    width: 0 auto;
+    color: rgb(241, 14, 14);
+
+}
