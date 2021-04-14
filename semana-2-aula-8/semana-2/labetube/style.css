@@ -1,0 +1,59 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        
+    }
+
+    div div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .cabecalho {
+        display: flex;
+        justify-content: space-between;
+        background: rgb(64, 64, 226);
+        height: 70px;
+        text-align: center;
+        align-items: center;
+    }
+
+
+    #videos {
+        display: flex;
+        flex-direction: column;
+        width: 50vh; 
+        /* margin: 20px 0;  */
+        padding: 30px;
+        text-align: center;
+                        
+    
+    }
+
+
+    .rodape {
+        display: flex;
+        background: rgb(24, 108, 233);
+        height: 70px;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    
+    }
+
+    button {
+        display: flex;
+        align-items: center;
+    }
+    
+    main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        
+
+    }
