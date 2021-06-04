@@ -9,13 +9,15 @@ import './App.css';
 export default function App () {
   return (
     <div className="App">
-      <button >ao clicar vai para tela inicial</button>
+      {/* <button onClick={TelaInicial} >ao clicar vai para tela inicial</button> */}
       <h1> ola </h1>
-      <button> ao clicar vai para lista de match</button>
+      <button  > ao clicar vou para lista de match</button>
       <hr></hr>
       <TelaInicial/>
       <TelaMatch/>
       {/* <Styled/> */}
+      
+      
     </div>
   );
 }

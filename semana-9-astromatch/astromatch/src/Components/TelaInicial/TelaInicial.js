@@ -4,6 +4,10 @@ import axios from "axios"
 const TelaInicial = () => {
 
     const [escolhePerfil, setPerfil] = useState({})
+
+
+
+
     const [escolhePessoas, setPessoas] = useState ({})
 
     //const [curtido, setCurtido] = useState ({})
@@ -20,13 +24,13 @@ const TelaInicial = () => {
     }
 
     useEffect (() => {
-        perfil ()
+         perfil ()
     }, [] )
 
     const pessoas =() => {
-        axios.get ("https://us-central1-missao-newton.cloudfunctions.net/astroMatch/:aluno/choose-person")
+        axios.get ("https://us-central1-missao-newton.cloudfunctions.net/astroMatch/victorcesar/choose-person")
         .then ((resposta) => {
-            console.log(resposta)
+            setPessoas(resposta)
         })
         .catch ((erro) => {
             console.log(erro)
@@ -41,11 +45,11 @@ const TelaInicial = () => {
     return (
         <div>
             <p>oiiiii sou tela inicial</p>
-            <p> Perfil: {perfil} </p>
+            <p> Perfil: </p>
             <img></img>
             <button /* onClick={} */ > X </button>
             <button /* onClick={} */ > S2 </button>
-
+            
         </div>
     )
 }
