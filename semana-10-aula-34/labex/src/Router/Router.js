@@ -27,7 +27,7 @@ const Router = () => {
 
                 <Route exact path={"/trips/application"} > <InscreverViagem /> </Route>
 
-                <Route exact path={"/admin/trips//:id"} > <TripsDetaisPage /> </Route>
+                <Route exact path={"/admin/trips/:id"} > <TripsDetaisPage /> </Route>
 
                 <Route exact path={"/login"} > <LoginPage /> </Route>
 

@@ -8,20 +8,20 @@ import { useHistory} from "react-router-dom"
 export const LoginPage = () => {
 
     const [email, handleEmail] = useInput("")
-    const [senha, handleSenha] = useInput("")
+    const [password, handlePassword] = useInput("")
     const history = useHistory ()
 
 
     const onClickLogin = () => {
-        const body = { email, senha }
+        const body = { email, password }
         console.log(body)
     }
 
     axios.post(` ${BASE_URL} /login `)
         .then((resposta) => {
             localStorage.setItem("token", resposta.data.token)
-            history.push ("/admin/trips/list")
-            console.log(resposta)
+            history.push ("/trip-detail")
+            //console.log(resposta)
         })
 
         .catch((erro) => {
@@ -35,7 +35,7 @@ export const LoginPage = () => {
 
             <input value={email} onChange={handleEmail} placeholder={"e-mail"} ></input>
 
-            <input value={senha} onChange={handleSenha} placeholder={"senha"} /* type="password" */ ></input>
+            <input value={password} onChange={handlePassword} placeholder={"senha"} /* type="password" */ ></input>
 
             <button onClick={onClickLogin} > Entrar </button>
 
