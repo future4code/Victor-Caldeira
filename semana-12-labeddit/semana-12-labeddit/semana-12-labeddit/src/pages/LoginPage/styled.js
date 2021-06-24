@@ -5,6 +5,7 @@ display: flex;
 flex-direction: column;
 align-items: center;
 width: 100vw;
+margin-top: 25vh;
 `
 
 export const InputContainer = styled.div`

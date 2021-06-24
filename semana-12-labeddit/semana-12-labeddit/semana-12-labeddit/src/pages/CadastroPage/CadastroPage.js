@@ -1,24 +1,23 @@
 import React from "react";
-import {Button} from "@material-ui/core";
+import { ScreenContainer } from "./styled";
+import logo from "../../imagens-assents/pesquisa.png"
+import CadastroForm from "./CadastroForm";
+import { LogoImage} from "./styled";
+import useUnprotectedPage from "../../hooks/useUnprotectedPage"
 
-const CadastroPage = () => {
+const CadastroPage = ({setRightButtonText}) => {
+    useUnprotectedPage()
+
     return (
-        <div>
-            <h1> CadastroPage </h1>
-
-            <input placeholder="Nome do Usuário" ></input>
-
-            <input placeholder="Email" ></input>
-
-            <input placeholder="Senha" ></input>
-
-
-            <Button variant="contained" color="primary">
-                CADASTRO
-            </Button>
-
-        </div>
+        <ScreenContainer>
+            <LogoImage scr={logo} />
+            <h1> CadastroForm (era para ter uma imagem aqui) </h1>
+            <CadastroForm setRightButtonText = { setRightButtonText} />
+            
+        </ScreenContainer>
     )
 }
+
+
 
 export default CadastroPage
