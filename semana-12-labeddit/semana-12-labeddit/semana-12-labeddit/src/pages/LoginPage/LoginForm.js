@@ -3,33 +3,25 @@ import { InputContainer } from "./styled"
 import { TextField } from "@material-ui/core";
 import useForm from "../../hooks/useForms";
 import { Button } from "@material-ui/core";
-import axios from "axios";
-import { BASE_URL } from "../../constants/urls";
+import { login } from "../../services/user";
+import { useHistory } from "react-router-dom";
 
-const LoginForm = () => {
+
+
+const LoginForm = ({rightButtonText, setRightButtonText}) => {
 
     const [form, onChange, clear] = useForm({ email: "", password: "" })
+    const history = useHistory()
 
     const onSubmitForm = (event) => {
         event.preventDefault()
-        login()
-    }
-
-    const login = () => {
-        axios.post(`${BASE_URL}/users/login`, form)
-            .then((resposta) => {
-                localStorage.setItem("token", resposta.data.token)
-                clear();
-            })
-
-            .catch((erro) =>
-                alert("Erro ao Logar"))
+        login(form, clear, history, setRightButtonText )
     }
 
 
     return (
 
-        
+
         <InputContainer>
             <form onSubmit={onSubmitForm} >
                 <TextField

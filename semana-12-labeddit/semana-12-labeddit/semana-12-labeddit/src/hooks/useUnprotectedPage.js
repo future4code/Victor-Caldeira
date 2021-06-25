@@ -1,10 +1,10 @@
 import { useHistory } from 'react-router-dom'
-import { useLayoutEffect } from 'react'
+import { useEffect } from 'react'
 import { goToCadastroPage } from "../routes/coordinator"
 
 const useUnprotectedPage = () => {
   const history = useHistory()
-  useLayoutEffect(() => {
+  useEffect(() => {
     const token = localStorage.getItem('token')
     if (token){
         goToCadastroPage(history)

@@ -6,10 +6,11 @@ import { useHistory } from "react-router-dom";
 import { CircularProgress } from "@material-ui/core";
 import { Button } from "@material-ui/core";
 import { TextField } from "@material-ui/core";
+import { signUp } from "../../services/user";
 
 
 
-const CadastroForm = (setRightButtonText) => {
+const CadastroForm = () => {
 
     const history = useHistory()
 
@@ -17,9 +18,8 @@ const CadastroForm = (setRightButtonText) => {
     const [isLoading, setIsLoading] = useState (false)
 
     const onSubmitForm = (event) => {
-        console.log(form)
         event.preventDefault()
-        //sigUp(form, clear, history, setRightButtonText, setIsLoading)
+        signUp(form, clear, history)
     }
 
     return (
